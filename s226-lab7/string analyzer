@@ -1,0 +1,23 @@
+from string_package import (
+    reverse_string,
+    capitalize_words,
+    remove_punctuation,
+    count_characters,
+    count_words,
+    average_word_length
+)
+
+def main():
+    sentence = input("Enter a sentence: ")
+
+    print("\nReversed:", reverse_string(sentence))
+    print("Capitalized:", capitalize_words(sentence))
+
+    no_punct = remove_punctuation(sentence)
+    print("Without Punctuation:", no_punct)
+    print("Character Count:", count_characters(no_punct))
+    print("Word Count:", count_words(no_punct))
+    print("Average Word Length:", average_word_length(no_punct))
+
+if __name__ == "__main__":
+    main()
